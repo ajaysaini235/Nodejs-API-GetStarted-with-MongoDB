@@ -22,7 +22,7 @@ try {
    console.log("Caught exception trying to connect to database");
 }
 
-app.set('port', (process.env.PORT || 5000));
+process.env.PORT = 5000;
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
